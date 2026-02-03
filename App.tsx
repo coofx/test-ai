@@ -1,23 +1,22 @@
 
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import DashboardPreview from './components/DashboardPreview';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import DashboardPreview from './components/DashboardPreview.tsx';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen hero-gradient overflow-x-hidden">
+    <div className="min-h-screen hero-gradient overflow-x-hidden relative">
       <Navbar />
-      <main className="pt-24 pb-20">
+      <main className="pt-32 pb-24 relative z-10">
         <Hero />
-        <div className="mt-16 px-4 max-w-[1200px] mx-auto">
+        <div className="mt-20 px-4 max-w-[1240px] mx-auto">
           <DashboardPreview />
         </div>
       </main>
       
-      {/* Decorative background blurs */}
-      <div className="fixed -top-24 -left-24 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse pointer-events-none"></div>
-      <div className="fixed -top-24 -right-24 w-96 h-96 bg-sky-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse pointer-events-none delay-700"></div>
+      <div className="fixed top-[-10%] left-[-5%] w-[40vw] h-[40vw] bg-blue-100/40 rounded-full mix-blend-multiply filter blur-[120px] pointer-events-none"></div>
+      <div className="fixed top-[-10%] right-[-5%] w-[40vw] h-[40vw] bg-sky-100/40 rounded-full mix-blend-multiply filter blur-[120px] pointer-events-none"></div>
     </div>
   );
 };

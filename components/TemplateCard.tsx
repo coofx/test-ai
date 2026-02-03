@@ -11,29 +11,28 @@ interface TemplateCardProps {
 
 const TemplateCard: React.FC<TemplateCardProps> = ({ title, description, tag, icon }) => {
   return (
-    <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 group relative flex flex-col gap-4">
+    <div className="bg-white p-7 rounded-[24px] border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-blue-500/5 transition-all hover:-translate-y-1 group relative flex flex-col gap-5">
       <div className="flex items-center justify-between">
-        <span className="px-2.5 py-1 bg-blue-50 text-blue-600 text-[9px] font-bold uppercase rounded-md tracking-wider">
+        <span className="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-black uppercase rounded-lg tracking-wider">
           {tag}
         </span>
-        <button className="text-slate-300 hover:text-red-500 transition-colors">
-          <Heart className="w-4 h-4" />
+        <button className="text-slate-300 hover:text-rose-500 transition-colors">
+          <Heart className="w-5 h-5" />
         </button>
       </div>
 
-      <div className="flex items-center gap-3">
-        <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center border border-slate-100 group-hover:bg-blue-50 group-hover:border-blue-100 transition-colors">
-          <span className="text-slate-600 group-hover:text-blue-600">{icon}</span>
+      <div className="flex items-center gap-4">
+        <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 group-hover:bg-blue-600 group-hover:border-blue-600 group-hover:text-white transition-all duration-300">
+          <span className="transition-colors">{icon}</span>
         </div>
-        <h4 className="text-lg font-bold text-slate-800">{title}</h4>
+        <h4 className="text-[19px] font-[800] text-slate-900 tracking-tight">{title}</h4>
       </div>
 
-      <p className="text-xs text-slate-500 font-medium leading-relaxed pr-2">
+      <p className="text-[13px] text-slate-500 font-medium leading-[1.6] pr-2">
         {description}
       </p>
 
-      {/* Decorative element on hover */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-blue-600 rounded-b-2xl scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-1 bg-blue-600 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform origin-center"></div>
     </div>
   );
 };

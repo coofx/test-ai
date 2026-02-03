@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './components/Navbar.tsx';
-import Hero from './components/Hero.tsx';
-import DashboardPreview from './components/DashboardPreview.tsx';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import DashboardPreview from './components/DashboardPreview';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen hero-gradient overflow-x-hidden relative">
+    <div className="min-h-screen hero-gradient overflow-x-hidden relative selection:bg-blue-100 selection:text-blue-900">
       <Navbar />
       <main className="pt-32 pb-24 relative z-10">
         <Hero />
@@ -14,6 +14,7 @@ const App: React.FC = () => {
         </div>
       </main>
       
+      {/* Эстетичные фоновые пятна */}
       <div className="fixed top-[-10%] left-[-5%] w-[40vw] h-[40vw] bg-blue-100/40 rounded-full mix-blend-multiply filter blur-[120px] pointer-events-none"></div>
       <div className="fixed top-[-10%] right-[-5%] w-[40vw] h-[40vw] bg-sky-100/40 rounded-full mix-blend-multiply filter blur-[120px] pointer-events-none"></div>
     </div>

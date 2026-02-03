@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Sidebar from './Sidebar';
-import DashboardHeader from './DashboardHeader';
-import TemplateCard from './TemplateCard';
+import Sidebar from './Sidebar.tsx';
+import DashboardHeader from './DashboardHeader.tsx';
+import TemplateCard from './TemplateCard.tsx';
 import { FileText, Search, Share2, Layers, Filter, Upload, Plus } from 'lucide-react';
 
 const DashboardPreview: React.FC = () => {

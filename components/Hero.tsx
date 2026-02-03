@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Hero: React.FC = () => {
@@ -10,8 +9,7 @@ const Hero: React.FC = () => {
       </div>
       
       <h1 className="text-5xl md:text-7xl font-[800] text-slate-900 leading-[1.1] tracking-tight mb-8">
-        The Fastest Way to <br />
-        <span className="text-slate-800">Create Quality Content.</span>
+        Пуся привет!
       </h1>
       
       <p className="max-w-xl mx-auto text-lg text-slate-500 font-medium mb-10 leading-relaxed">

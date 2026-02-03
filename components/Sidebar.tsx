@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { LayoutGrid, FileText, Search, BarChart2, Share2, Layers, Grid, Database, Settings, ShieldCheck } from 'lucide-react';
+import { LayoutGrid, FileText, Search, BarChart2, Grid, Database, Settings, ShieldCheck } from 'lucide-react';
 
 const Sidebar: React.FC = () => {
   return (

@@ -1,8 +1,8 @@
 
 import React from 'react';
-import Navbar from './components/Navbar.tsx';
-import Hero from './components/Hero.tsx';
-import DashboardPreview from './components/DashboardPreview.tsx';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import DashboardPreview from './components/DashboardPreview';
 
 const App: React.FC = () => {
   return (
